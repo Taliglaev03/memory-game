@@ -6,6 +6,11 @@ body{
     height: 100vh;
 }
 
+.table{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 h1, h3{
     text-align: center;
     padding: 10px;
@@ -19,7 +24,14 @@ h1, h3{
     gap: 15px;
     width: 100%;
     max-width: 800px;
-    margin: 15px auto;
+    margin: 15px auto;  
+  }
+
+  @media screen and (max-width:600px) {
+    .grid{
+       grid-template-columns: repeat(4, 1fr);
+    }
+   
     
   }
   
